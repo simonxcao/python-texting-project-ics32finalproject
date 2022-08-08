@@ -1,0 +1,1397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>Final_Profile API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>Final_Profile</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># Profile.py
+# ICS 32 Winter 2022
+# Final Project
+# Author: Mark S. Baldwin
+# Modified by David Ning and Simon Cao
+# tcao10 @ uci.edu, zhenglin @uci.edu
+# v0.1.8
+
+import json, time, os
+from pathlib import Path
+
+
+def single_double(jsonFile):
+    &#34;&#34;&#34;Change to single quotation to double quatation mark&#34;&#34;&#34;
+    x = &#34;&#34;
+    determine = False
+
+    for i in jsonFile:
+        if i == &#34;&#39;&#34; and not determine:
+            i = &#39;&#34;&#39;  # Replace single to double quotation mark
+        elif i == &#34;&#39;&#34; and determine:
+            x = x[:-1]  # Remove x before single quotes
+        elif i == &#39;&#34;&#39;:
+            i = &#39;\\&#39; + i  # x has double quotes
+        determine = (i == &#34;\\&#34;)  # See if determine should be True or False
+        x += i
+    return x
+
+
+class DsuFileError(Exception):
+    &#34;&#34;&#34;
+    DsuFileError is a custom exception handler that you should catch in your own code. It
+    is raised when attempting to load or save Profile objects to file the system.
+    &#34;&#34;&#34;
+    pass
+
+
+class DsuProfileError(Exception):
+    &#34;&#34;&#34;
+    DsuProfileError is a custom exception handler that you should catch in your own code. It
+    is raised when attempting to deserialize a dsu file to a Profile object.
+    &#34;&#34;&#34;
+    pass
+
+
+class Post(dict):
+    &#34;&#34;&#34;
+    The Post class is responsible for working with individual user posts. It currently supports two features:
+    A timestamp property that is set upon instantiation and when the entry object is set and an
+    entry property that stores the post message.
+    &#34;&#34;&#34;
+
+    def __init__(self, entry: str = None, timestamp: float = 0):
+        self._timestamp = timestamp
+        self.set_entry(entry)
+
+        # Subclass dict to expose Post properties for serialization
+        # Don&#39;t worry about this!
+        dict.__init__(self, entry=self._entry, timestamp=self._timestamp)
+
+    def set_entry(self, entry):
+        self._entry = entry
+        dict.__setitem__(self, &#39;entry&#39;, entry)
+
+        # If timestamp has not been set, generate a new from time module
+        if self._timestamp == 0:
+            self._timestamp = time.time()
+
+    def get_entry(self):
+        return self._entry
+
+    def set_time(self, time: float):
+        self._timestamp = time
+        dict.__setitem__(self, &#39;timestamp&#39;, time)
+
+    def get_time(self):
+        return self._timestamp
+
+    &#34;&#34;&#34;
+    The property method is used to support get and set capability for entry and time values.
+    When the value for entry is changed, or set, the timestamp field is updated to the
+    current time.
+    &#34;&#34;&#34;
+    entry = property(get_entry, set_entry)
+    timestamp = property(get_time, set_time)
+
+
+class Profile:
+    &#34;&#34;&#34;
+    The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to
+    use this class to manage the information provided by each new user created within your program for a2.
+    Pay close attention to the properties and functions in this class as you will need to make use of
+    each of them in your program.
+
+    When creating your program you will need to collect user input for the properties exposed by this class.
+    A Profile class should ensure that a username and password are set, but contains no conventions to do so.
+    You should make sure that your code verifies that required properties are set.
+    &#34;&#34;&#34;
+
+    def __init__(self, dsuserver=None, username=None, password=None):
+        self.dsuserver = dsuserver  # REQUIRED
+        self.username = username  # REQUIRED
+        self.password = password  # REQUIRED
+        self.bio = &#39;&#39;  # OPTIONAL
+        self._posts = []  # OPTIONAL
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;
+        add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+        list object in the order they are added. So if multiple Posts objects are created, but added to the
+        Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+        So take caution as to how you implement your add_post code.
+        &#34;&#34;&#34;
+        self._posts.append(post)
+
+    def del_post(self, index: int) -&gt; bool:
+        &#34;&#34;&#34;
+        del_post removes a Post at a given index and returns True if successful and False if an invalid
+        index was supplied.
+
+        To determine which post to delete you must implement your own search operation on the posts
+        returned from the get_posts function to find the correct index.
+        &#34;&#34;&#34;
+        try:
+            del self._posts[index]
+            return True
+        except IndexError:
+            return False
+
+    def get_posts(self) -&gt; list[Post]:
+        &#34;&#34;&#34;
+        get_posts returns the list object containing all posts that have been added to the Profile object
+        &#34;&#34;&#34;
+        return self._posts
+
+    &#34;&#34;&#34;
+
+    save_profile accepts an existing dsu file to save the current instance of Profile to the file system.
+
+    Example usage:
+
+    profile = Profile()
+    profile.save_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuFileError
+
+    &#34;&#34;&#34;
+
+    def save_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;save_profile accepts an existing dsu file to save the current instance of Profile to the file system.&#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;w&#39;)
+                json.dump(self.__dict__, f)
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            raise DsuFileError(&#34;Invalid DSU file path or type&#34;)
+
+    &#34;&#34;&#34;
+
+    load_profile will populate the current instance of Profile with data stored in a DSU file.
+
+    Example usage: 
+
+    profile = Profile()
+    profile.load_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuProfileError, DsuFileError
+
+    &#34;&#34;&#34;
+
+    def load_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;load_profile will populate the current instance of Profile with data stored in a DSU file.&#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;r&#39;)
+                obj = json.load(f)
+                self.username = obj[&#39;username&#39;]
+                self.password = obj[&#39;password&#39;]
+                self.dsuserver = obj[&#39;dsuserver&#39;]
+                self.bio = obj[&#39;bio&#39;]
+                for post_obj in obj[&#39;_posts&#39;]:
+                    post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                    self._posts.append(post)
+                f.close()
+            except Exception as ex:
+                raise DsuProfileError(ex)
+        else:
+            raise DsuFileError()
+
+
+class SaveData:
+    &#34;&#34;&#34;This class saves the data locally in dsu files&#34;&#34;&#34;
+    def __init__(self):
+        self.username = None
+        self.re_username = None
+        self.password = None
+        self.dsuserver = None
+        self.message_list = []
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;Add post into the message_list&#34;&#34;&#34;
+        self.message_list.append(post)  # Adding post to the message_list list
+
+    def check_for_duplicate(self, re_username, filename):
+        &#34;&#34;&#34;This method checks for the duplicated recipient&#39;s username in the dsu file&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)  # Open the file first
+        read = opener.readlines()  # Read the lines in the file
+        if read == [] or read == &#39;\n&#39;:
+            return False  # Return False
+        else:
+            delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+            s = [delimiter + e for e in read[0].split(delimiter) if e]  # Split the string into sections
+            return_return = None
+            for i in s:  # If the recipient is found
+                x = json.loads(i)
+                if x[&#39;re_username&#39;] == re_username:  # Check if it contains the recipient&#39;s username
+                    return True  # Send back true
+                else:
+                    return_return = False
+            return return_return
+
+    def load_profile(self, re_username, filename):
+        &#34;&#34;&#34;Load the profile and split the string&#34;&#34;&#34;
+        try:  # Split them apart first
+            f = open(filename, &#39;r&#39;)
+            reader = f.readline()
+            delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+            s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+            # line 247 Adapted from codegrepper.com
+            flag = 0  # Flag is for the wanted recipient
+            for i in s:
+                if eval(i)[&#39;re_username&#39;] == re_username:  # If the dictionary&#39;s username is the username we want
+                    s.remove(i)  # Remove from the dictionary
+                    flag = i
+
+            self.username = eval(flag)[&#39;username&#39;]  # Turn flag to a dictionary using eval() then get the username
+            self.re_username = eval(flag)[&#39;re_username&#39;]
+            self.password = eval(flag)[&#39;password&#39;]
+            self.dsuserver = eval(flag)[&#39;dsuserver&#39;]
+            for post_obj in eval(flag)[&#39;message_list&#39;]:
+                self.message_list.append(post_obj)
+            return s  # Return the removed list
+
+        except Exception as ex:
+            print(ex)
+            raise DsuProfileError(ex)
+
+    def save_into_dsu(self, username, message, re_username, password, dsuserver, filename) -&gt; None:
+        &#34;&#34;&#34;This method gets all the parameter and is most likely the entry point of this SaveData()&#34;&#34;&#34;
+        checker = self.check_for_duplicate(re_username, filename)  # Go check it the recipient was made
+        if checker is False:  # If return value is false, it means it does not exist
+            try:
+                f = open(filename, &#39;a&#39;)  # Add to the file
+                self.dsuserver = dsuserver
+                self.username = username
+                self.re_username = re_username
+                self.password = password
+                self.message_list.append(message)
+                json.dump(self.__dict__, f)  # Dump it into the file with JSON format
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            current_remove = self.load_profile(re_username, filename)  # Get the rest of the information (without the current user one)
+            f = open(filename, &#39;w&#39;)  # Delete everything inside the file
+            f.close()
+            self.add_post(message)  # Add post to the current user&#39;s list
+            f = open(filename, &#39;a&#39;)  # Overwrite the current string inside the file
+            if len(current_remove) != 0:
+                for i in current_remove:
+                    x = str(i)
+                    f.write(x)  # Append the original into the file
+                y = self.__dict__
+                new_insert = single_double(str(y))  # Make sure it is double quotation mark
+                f.write(new_insert)  # Insert the new message
+                f.close()
+            else:
+                x = self.__dict__
+                new_insert = single_double(str(x))  # Double quotation
+                f.write(new_insert)
+                f.close()
+
+    def open_mes(self, filename):
+        &#34;&#34;&#34;This method accepts a filename and return a list of recipient&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;  # Split the information
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []
+        for i in s:
+            res = json.loads(i)
+            return_list.append(res[&#39;re_username&#39;])  # Get the recipient username into a list
+        return return_list
+
+    def re_message_get(self, re_username, filename):
+        &#34;&#34;&#34;This method gets a recipient&#39;s username and filename, it returns a list of all the messages&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []
+        for i in s:
+            res = json.loads(i)  # Load the data (in Json)
+            if re_username == res[&#39;re_username&#39;]:  # Get the recipient&#39;s username
+                for j in res[&#39;message_list&#39;]:
+                    if j == []:
+                        return None  # Empty file
+                    else:
+                        return_list.append(j)  # Append all the messages
+        return_list.remove(return_list[0])  # Remove the first item because it is always an empty &#39;&#39;
+        return return_list
+
+    def return_user_pass(self, filename):
+        &#34;&#34;&#34;This method takes in a filename and return a list of user&#39;s information such as username, password, and dsuserver&#34;&#34;&#34;
+        opener = open(filename)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []  # Create an empty list
+        for i in s:
+            res = json.loads(i)  # Load all the information in Json
+            return_list.append(res[&#39;username&#39;])
+            return_list.append(res[&#39;password&#39;])
+            return_list.append(res[&#39;dsuserver&#39;])
+            break  # Because it does not need to run multiple times, all the above variables are the same for all.
+        return return_list
+
+
+class GetData:
+    &#34;&#34;&#34;This class gets the data from local dsu file, and return a list of information&#34;&#34;&#34;
+    def __init__(self):
+        self.filename = None
+        self.dsuserver = None
+        self.username = None
+        self.password = None
+        self.bio = None
+        self.message_list = []
+
+    def get_file_name(self):
+        &#34;&#34;&#34;Ask for the input of the file&#39;s name&#34;&#34;&#34;
+        self.filename = input(&#34;Enter the path of the dsu file&#34;)  # Want the filename from the user
+
+    def send_file(self, message) -&gt; list:
+        &#34;&#34;&#34;Take in message as a parameter and get the items&#34;&#34;&#34;
+        message = json.loads(message)
+        self.dsuserver = message[&#39;dsuserver&#39;]
+        self.username = message[&#39;username&#39;]
+        self.password = message[&#39;password&#39;]
+        self.bio = message[&#39;bio&#39;]
+        profile = Profile()  # Open the profile
+        profile.load_profile(self.filename)
+        x = profile.get_posts()  # Get all the posts
+        y = str(x)
+        getter = single_double(y)
+        count = y.split(&#39;}, {&#39;)  # Split the string.
+        g = len(count)
+        alist = json.loads(getter)  # Load the json file
+        if g != 1:
+            for i in range(g):
+                self.message_list.append(alist[i][&#34;entry&#34;])  # Print out the element in the json file
+        else:
+            print(&#34;no post&#34;)
+        return_list = [self.dsuserver, self.username, self.password, self.bio, self.message_list]  # Return info list
+        return return_list</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="Final_Profile.single_double"><code class="name flex">
+<span>def <span class="ident">single_double</span></span>(<span>jsonFile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Change to single quotation to double quatation mark</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def single_double(jsonFile):
+    &#34;&#34;&#34;Change to single quotation to double quatation mark&#34;&#34;&#34;
+    x = &#34;&#34;
+    determine = False
+
+    for i in jsonFile:
+        if i == &#34;&#39;&#34; and not determine:
+            i = &#39;&#34;&#39;  # Replace single to double quotation mark
+        elif i == &#34;&#39;&#34; and determine:
+            x = x[:-1]  # Remove x before single quotes
+        elif i == &#39;&#34;&#39;:
+            i = &#39;\\&#39; + i  # x has double quotes
+        determine = (i == &#34;\\&#34;)  # See if determine should be True or False
+        x += i
+    return x</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="Final_Profile.DsuFileError"><code class="flex name class">
+<span>class <span class="ident">DsuFileError</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>DsuFileError is a custom exception handler that you should catch in your own code. It
+is raised when attempting to load or save Profile objects to file the system.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DsuFileError(Exception):
+    &#34;&#34;&#34;
+    DsuFileError is a custom exception handler that you should catch in your own code. It
+    is raised when attempting to load or save Profile objects to file the system.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="Final_Profile.DsuProfileError"><code class="flex name class">
+<span>class <span class="ident">DsuProfileError</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>DsuProfileError is a custom exception handler that you should catch in your own code. It
+is raised when attempting to deserialize a dsu file to a Profile object.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DsuProfileError(Exception):
+    &#34;&#34;&#34;
+    DsuProfileError is a custom exception handler that you should catch in your own code. It
+    is raised when attempting to deserialize a dsu file to a Profile object.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.Exception</li>
+<li>builtins.BaseException</li>
+</ul>
+</dd>
+<dt id="Final_Profile.GetData"><code class="flex name class">
+<span>class <span class="ident">GetData</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>This class gets the data from local dsu file, and return a list of information</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class GetData:
+    &#34;&#34;&#34;This class gets the data from local dsu file, and return a list of information&#34;&#34;&#34;
+    def __init__(self):
+        self.filename = None
+        self.dsuserver = None
+        self.username = None
+        self.password = None
+        self.bio = None
+        self.message_list = []
+
+    def get_file_name(self):
+        &#34;&#34;&#34;Ask for the input of the file&#39;s name&#34;&#34;&#34;
+        self.filename = input(&#34;Enter the path of the dsu file&#34;)  # Want the filename from the user
+
+    def send_file(self, message) -&gt; list:
+        &#34;&#34;&#34;Take in message as a parameter and get the items&#34;&#34;&#34;
+        message = json.loads(message)
+        self.dsuserver = message[&#39;dsuserver&#39;]
+        self.username = message[&#39;username&#39;]
+        self.password = message[&#39;password&#39;]
+        self.bio = message[&#39;bio&#39;]
+        profile = Profile()  # Open the profile
+        profile.load_profile(self.filename)
+        x = profile.get_posts()  # Get all the posts
+        y = str(x)
+        getter = single_double(y)
+        count = y.split(&#39;}, {&#39;)  # Split the string.
+        g = len(count)
+        alist = json.loads(getter)  # Load the json file
+        if g != 1:
+            for i in range(g):
+                self.message_list.append(alist[i][&#34;entry&#34;])  # Print out the element in the json file
+        else:
+            print(&#34;no post&#34;)
+        return_list = [self.dsuserver, self.username, self.password, self.bio, self.message_list]  # Return info list
+        return return_list</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="Final_Profile.GetData.get_file_name"><code class="name flex">
+<span>def <span class="ident">get_file_name</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Ask for the input of the file's name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_file_name(self):
+    &#34;&#34;&#34;Ask for the input of the file&#39;s name&#34;&#34;&#34;
+    self.filename = input(&#34;Enter the path of the dsu file&#34;)  # Want the filename from the user</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.GetData.send_file"><code class="name flex">
+<span>def <span class="ident">send_file</span></span>(<span>self, message) ‑> list</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Take in message as a parameter and get the items</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send_file(self, message) -&gt; list:
+    &#34;&#34;&#34;Take in message as a parameter and get the items&#34;&#34;&#34;
+    message = json.loads(message)
+    self.dsuserver = message[&#39;dsuserver&#39;]
+    self.username = message[&#39;username&#39;]
+    self.password = message[&#39;password&#39;]
+    self.bio = message[&#39;bio&#39;]
+    profile = Profile()  # Open the profile
+    profile.load_profile(self.filename)
+    x = profile.get_posts()  # Get all the posts
+    y = str(x)
+    getter = single_double(y)
+    count = y.split(&#39;}, {&#39;)  # Split the string.
+    g = len(count)
+    alist = json.loads(getter)  # Load the json file
+    if g != 1:
+        for i in range(g):
+            self.message_list.append(alist[i][&#34;entry&#34;])  # Print out the element in the json file
+    else:
+        print(&#34;no post&#34;)
+    return_list = [self.dsuserver, self.username, self.password, self.bio, self.message_list]  # Return info list
+    return return_list</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Final_Profile.Post"><code class="flex name class">
+<span>class <span class="ident">Post</span></span>
+<span>(</span><span>entry: str = None, timestamp: float = 0)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Post class is responsible for working with individual user posts. It currently supports two features:
+A timestamp property that is set upon instantiation and when the entry object is set and an
+entry property that stores the post message.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Post(dict):
+    &#34;&#34;&#34;
+    The Post class is responsible for working with individual user posts. It currently supports two features:
+    A timestamp property that is set upon instantiation and when the entry object is set and an
+    entry property that stores the post message.
+    &#34;&#34;&#34;
+
+    def __init__(self, entry: str = None, timestamp: float = 0):
+        self._timestamp = timestamp
+        self.set_entry(entry)
+
+        # Subclass dict to expose Post properties for serialization
+        # Don&#39;t worry about this!
+        dict.__init__(self, entry=self._entry, timestamp=self._timestamp)
+
+    def set_entry(self, entry):
+        self._entry = entry
+        dict.__setitem__(self, &#39;entry&#39;, entry)
+
+        # If timestamp has not been set, generate a new from time module
+        if self._timestamp == 0:
+            self._timestamp = time.time()
+
+    def get_entry(self):
+        return self._entry
+
+    def set_time(self, time: float):
+        self._timestamp = time
+        dict.__setitem__(self, &#39;timestamp&#39;, time)
+
+    def get_time(self):
+        return self._timestamp
+
+    &#34;&#34;&#34;
+    The property method is used to support get and set capability for entry and time values.
+    When the value for entry is changed, or set, the timestamp field is updated to the
+    current time.
+    &#34;&#34;&#34;
+    entry = property(get_entry, set_entry)
+    timestamp = property(get_time, set_time)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>builtins.dict</li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="Final_Profile.Post.entry"><code class="name">var <span class="ident">entry</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_entry(self):
+    return self._entry</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Post.timestamp"><code class="name">var <span class="ident">timestamp</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_time(self):
+    return self._timestamp</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="Final_Profile.Post.get_entry"><code class="name flex">
+<span>def <span class="ident">get_entry</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_entry(self):
+    return self._entry</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Post.get_time"><code class="name flex">
+<span>def <span class="ident">get_time</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_time(self):
+    return self._timestamp</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Post.set_entry"><code class="name flex">
+<span>def <span class="ident">set_entry</span></span>(<span>self, entry)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_entry(self, entry):
+    self._entry = entry
+    dict.__setitem__(self, &#39;entry&#39;, entry)
+
+    # If timestamp has not been set, generate a new from time module
+    if self._timestamp == 0:
+        self._timestamp = time.time()</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Post.set_time"><code class="name flex">
+<span>def <span class="ident">set_time</span></span>(<span>self, time: float)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_time(self, time: float):
+    self._timestamp = time
+    dict.__setitem__(self, &#39;timestamp&#39;, time)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Final_Profile.Profile"><code class="flex name class">
+<span>class <span class="ident">Profile</span></span>
+<span>(</span><span>dsuserver=None, username=None, password=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to
+use this class to manage the information provided by each new user created within your program for a2.
+Pay close attention to the properties and functions in this class as you will need to make use of
+each of them in your program.</p>
+<p>When creating your program you will need to collect user input for the properties exposed by this class.
+A Profile class should ensure that a username and password are set, but contains no conventions to do so.
+You should make sure that your code verifies that required properties are set.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Profile:
+    &#34;&#34;&#34;
+    The Profile class exposes the properties required to join an ICS 32 DSU server. You will need to
+    use this class to manage the information provided by each new user created within your program for a2.
+    Pay close attention to the properties and functions in this class as you will need to make use of
+    each of them in your program.
+
+    When creating your program you will need to collect user input for the properties exposed by this class.
+    A Profile class should ensure that a username and password are set, but contains no conventions to do so.
+    You should make sure that your code verifies that required properties are set.
+    &#34;&#34;&#34;
+
+    def __init__(self, dsuserver=None, username=None, password=None):
+        self.dsuserver = dsuserver  # REQUIRED
+        self.username = username  # REQUIRED
+        self.password = password  # REQUIRED
+        self.bio = &#39;&#39;  # OPTIONAL
+        self._posts = []  # OPTIONAL
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;
+        add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+        list object in the order they are added. So if multiple Posts objects are created, but added to the
+        Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+        So take caution as to how you implement your add_post code.
+        &#34;&#34;&#34;
+        self._posts.append(post)
+
+    def del_post(self, index: int) -&gt; bool:
+        &#34;&#34;&#34;
+        del_post removes a Post at a given index and returns True if successful and False if an invalid
+        index was supplied.
+
+        To determine which post to delete you must implement your own search operation on the posts
+        returned from the get_posts function to find the correct index.
+        &#34;&#34;&#34;
+        try:
+            del self._posts[index]
+            return True
+        except IndexError:
+            return False
+
+    def get_posts(self) -&gt; list[Post]:
+        &#34;&#34;&#34;
+        get_posts returns the list object containing all posts that have been added to the Profile object
+        &#34;&#34;&#34;
+        return self._posts
+
+    &#34;&#34;&#34;
+
+    save_profile accepts an existing dsu file to save the current instance of Profile to the file system.
+
+    Example usage:
+
+    profile = Profile()
+    profile.save_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuFileError
+
+    &#34;&#34;&#34;
+
+    def save_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;save_profile accepts an existing dsu file to save the current instance of Profile to the file system.&#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;w&#39;)
+                json.dump(self.__dict__, f)
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            raise DsuFileError(&#34;Invalid DSU file path or type&#34;)
+
+    &#34;&#34;&#34;
+
+    load_profile will populate the current instance of Profile with data stored in a DSU file.
+
+    Example usage: 
+
+    profile = Profile()
+    profile.load_profile(&#39;/path/to/file.dsu&#39;)
+
+    Raises DsuProfileError, DsuFileError
+
+    &#34;&#34;&#34;
+
+    def load_profile(self, path: str) -&gt; None:
+        &#34;&#34;&#34;load_profile will populate the current instance of Profile with data stored in a DSU file.&#34;&#34;&#34;
+        p = Path(path)
+
+        if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+            try:
+                f = open(p, &#39;r&#39;)
+                obj = json.load(f)
+                self.username = obj[&#39;username&#39;]
+                self.password = obj[&#39;password&#39;]
+                self.dsuserver = obj[&#39;dsuserver&#39;]
+                self.bio = obj[&#39;bio&#39;]
+                for post_obj in obj[&#39;_posts&#39;]:
+                    post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                    self._posts.append(post)
+                f.close()
+            except Exception as ex:
+                raise DsuProfileError(ex)
+        else:
+            raise DsuFileError()</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="Final_Profile.Profile.add_post"><code class="name flex">
+<span>def <span class="ident">add_post</span></span>(<span>self, post: <a title="Final_Profile.Post" href="#Final_Profile.Post">Post</a>) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+list object in the order they are added. So if multiple Posts objects are created, but added to the
+Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+So take caution as to how you implement your add_post code.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_post(self, post: Post) -&gt; None:
+    &#34;&#34;&#34;
+    add_post accepts a Post object as parameter and appends it to the posts list. Posts are stored in a
+    list object in the order they are added. So if multiple Posts objects are created, but added to the
+    Profile in a different order, it is possible for the list to not be sorted by the Post.timestamp property.
+    So take caution as to how you implement your add_post code.
+    &#34;&#34;&#34;
+    self._posts.append(post)</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Profile.del_post"><code class="name flex">
+<span>def <span class="ident">del_post</span></span>(<span>self, index: int) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>del_post removes a Post at a given index and returns True if successful and False if an invalid
+index was supplied.</p>
+<p>To determine which post to delete you must implement your own search operation on the posts
+returned from the get_posts function to find the correct index.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def del_post(self, index: int) -&gt; bool:
+    &#34;&#34;&#34;
+    del_post removes a Post at a given index and returns True if successful and False if an invalid
+    index was supplied.
+
+    To determine which post to delete you must implement your own search operation on the posts
+    returned from the get_posts function to find the correct index.
+    &#34;&#34;&#34;
+    try:
+        del self._posts[index]
+        return True
+    except IndexError:
+        return False</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Profile.get_posts"><code class="name flex">
+<span>def <span class="ident">get_posts</span></span>(<span>self) ‑> list[<a title="Final_Profile.Post" href="#Final_Profile.Post">Post</a>]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>get_posts returns the list object containing all posts that have been added to the Profile object</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_posts(self) -&gt; list[Post]:
+    &#34;&#34;&#34;
+    get_posts returns the list object containing all posts that have been added to the Profile object
+    &#34;&#34;&#34;
+    return self._posts</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Profile.load_profile"><code class="name flex">
+<span>def <span class="ident">load_profile</span></span>(<span>self, path: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>load_profile will populate the current instance of Profile with data stored in a DSU file.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_profile(self, path: str) -&gt; None:
+    &#34;&#34;&#34;load_profile will populate the current instance of Profile with data stored in a DSU file.&#34;&#34;&#34;
+    p = Path(path)
+
+    if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+        try:
+            f = open(p, &#39;r&#39;)
+            obj = json.load(f)
+            self.username = obj[&#39;username&#39;]
+            self.password = obj[&#39;password&#39;]
+            self.dsuserver = obj[&#39;dsuserver&#39;]
+            self.bio = obj[&#39;bio&#39;]
+            for post_obj in obj[&#39;_posts&#39;]:
+                post = Post(post_obj[&#39;entry&#39;], post_obj[&#39;timestamp&#39;])
+                self._posts.append(post)
+            f.close()
+        except Exception as ex:
+            raise DsuProfileError(ex)
+    else:
+        raise DsuFileError()</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.Profile.save_profile"><code class="name flex">
+<span>def <span class="ident">save_profile</span></span>(<span>self, path: str) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>save_profile accepts an existing dsu file to save the current instance of Profile to the file system.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_profile(self, path: str) -&gt; None:
+    &#34;&#34;&#34;save_profile accepts an existing dsu file to save the current instance of Profile to the file system.&#34;&#34;&#34;
+    p = Path(path)
+
+    if os.path.exists(p) and p.suffix == &#39;.dsu&#39;:
+        try:
+            f = open(p, &#39;w&#39;)
+            json.dump(self.__dict__, f)
+            f.close()
+        except Exception as ex:
+            raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+    else:
+        raise DsuFileError(&#34;Invalid DSU file path or type&#34;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="Final_Profile.SaveData"><code class="flex name class">
+<span>class <span class="ident">SaveData</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>This class saves the data locally in dsu files</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class SaveData:
+    &#34;&#34;&#34;This class saves the data locally in dsu files&#34;&#34;&#34;
+    def __init__(self):
+        self.username = None
+        self.re_username = None
+        self.password = None
+        self.dsuserver = None
+        self.message_list = []
+
+    def add_post(self, post: Post) -&gt; None:
+        &#34;&#34;&#34;Add post into the message_list&#34;&#34;&#34;
+        self.message_list.append(post)  # Adding post to the message_list list
+
+    def check_for_duplicate(self, re_username, filename):
+        &#34;&#34;&#34;This method checks for the duplicated recipient&#39;s username in the dsu file&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)  # Open the file first
+        read = opener.readlines()  # Read the lines in the file
+        if read == [] or read == &#39;\n&#39;:
+            return False  # Return False
+        else:
+            delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+            s = [delimiter + e for e in read[0].split(delimiter) if e]  # Split the string into sections
+            return_return = None
+            for i in s:  # If the recipient is found
+                x = json.loads(i)
+                if x[&#39;re_username&#39;] == re_username:  # Check if it contains the recipient&#39;s username
+                    return True  # Send back true
+                else:
+                    return_return = False
+            return return_return
+
+    def load_profile(self, re_username, filename):
+        &#34;&#34;&#34;Load the profile and split the string&#34;&#34;&#34;
+        try:  # Split them apart first
+            f = open(filename, &#39;r&#39;)
+            reader = f.readline()
+            delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+            s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+            # line 247 Adapted from codegrepper.com
+            flag = 0  # Flag is for the wanted recipient
+            for i in s:
+                if eval(i)[&#39;re_username&#39;] == re_username:  # If the dictionary&#39;s username is the username we want
+                    s.remove(i)  # Remove from the dictionary
+                    flag = i
+
+            self.username = eval(flag)[&#39;username&#39;]  # Turn flag to a dictionary using eval() then get the username
+            self.re_username = eval(flag)[&#39;re_username&#39;]
+            self.password = eval(flag)[&#39;password&#39;]
+            self.dsuserver = eval(flag)[&#39;dsuserver&#39;]
+            for post_obj in eval(flag)[&#39;message_list&#39;]:
+                self.message_list.append(post_obj)
+            return s  # Return the removed list
+
+        except Exception as ex:
+            print(ex)
+            raise DsuProfileError(ex)
+
+    def save_into_dsu(self, username, message, re_username, password, dsuserver, filename) -&gt; None:
+        &#34;&#34;&#34;This method gets all the parameter and is most likely the entry point of this SaveData()&#34;&#34;&#34;
+        checker = self.check_for_duplicate(re_username, filename)  # Go check it the recipient was made
+        if checker is False:  # If return value is false, it means it does not exist
+            try:
+                f = open(filename, &#39;a&#39;)  # Add to the file
+                self.dsuserver = dsuserver
+                self.username = username
+                self.re_username = re_username
+                self.password = password
+                self.message_list.append(message)
+                json.dump(self.__dict__, f)  # Dump it into the file with JSON format
+                f.close()
+            except Exception as ex:
+                raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+        else:
+            current_remove = self.load_profile(re_username, filename)  # Get the rest of the information (without the current user one)
+            f = open(filename, &#39;w&#39;)  # Delete everything inside the file
+            f.close()
+            self.add_post(message)  # Add post to the current user&#39;s list
+            f = open(filename, &#39;a&#39;)  # Overwrite the current string inside the file
+            if len(current_remove) != 0:
+                for i in current_remove:
+                    x = str(i)
+                    f.write(x)  # Append the original into the file
+                y = self.__dict__
+                new_insert = single_double(str(y))  # Make sure it is double quotation mark
+                f.write(new_insert)  # Insert the new message
+                f.close()
+            else:
+                x = self.__dict__
+                new_insert = single_double(str(x))  # Double quotation
+                f.write(new_insert)
+                f.close()
+
+    def open_mes(self, filename):
+        &#34;&#34;&#34;This method accepts a filename and return a list of recipient&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;  # Split the information
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []
+        for i in s:
+            res = json.loads(i)
+            return_list.append(res[&#39;re_username&#39;])  # Get the recipient username into a list
+        return return_list
+
+    def re_message_get(self, re_username, filename):
+        &#34;&#34;&#34;This method gets a recipient&#39;s username and filename, it returns a list of all the messages&#34;&#34;&#34;
+        opener = open(filename, &#39;r&#39;)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []
+        for i in s:
+            res = json.loads(i)  # Load the data (in Json)
+            if re_username == res[&#39;re_username&#39;]:  # Get the recipient&#39;s username
+                for j in res[&#39;message_list&#39;]:
+                    if j == []:
+                        return None  # Empty file
+                    else:
+                        return_list.append(j)  # Append all the messages
+        return_list.remove(return_list[0])  # Remove the first item because it is always an empty &#39;&#39;
+        return return_list
+
+    def return_user_pass(self, filename):
+        &#34;&#34;&#34;This method takes in a filename and return a list of user&#39;s information such as username, password, and dsuserver&#34;&#34;&#34;
+        opener = open(filename)
+        reader = opener.readline()
+        delimiter = &#34;{&#34;
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        return_list = []  # Create an empty list
+        for i in s:
+            res = json.loads(i)  # Load all the information in Json
+            return_list.append(res[&#39;username&#39;])
+            return_list.append(res[&#39;password&#39;])
+            return_list.append(res[&#39;dsuserver&#39;])
+            break  # Because it does not need to run multiple times, all the above variables are the same for all.
+        return return_list</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="Final_Profile.SaveData.add_post"><code class="name flex">
+<span>def <span class="ident">add_post</span></span>(<span>self, post: <a title="Final_Profile.Post" href="#Final_Profile.Post">Post</a>) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Add post into the message_list</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_post(self, post: Post) -&gt; None:
+    &#34;&#34;&#34;Add post into the message_list&#34;&#34;&#34;
+    self.message_list.append(post)  # Adding post to the message_list list</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.check_for_duplicate"><code class="name flex">
+<span>def <span class="ident">check_for_duplicate</span></span>(<span>self, re_username, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method checks for the duplicated recipient's username in the dsu file</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_for_duplicate(self, re_username, filename):
+    &#34;&#34;&#34;This method checks for the duplicated recipient&#39;s username in the dsu file&#34;&#34;&#34;
+    opener = open(filename, &#39;r&#39;)  # Open the file first
+    read = opener.readlines()  # Read the lines in the file
+    if read == [] or read == &#39;\n&#39;:
+        return False  # Return False
+    else:
+        delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+        s = [delimiter + e for e in read[0].split(delimiter) if e]  # Split the string into sections
+        return_return = None
+        for i in s:  # If the recipient is found
+            x = json.loads(i)
+            if x[&#39;re_username&#39;] == re_username:  # Check if it contains the recipient&#39;s username
+                return True  # Send back true
+            else:
+                return_return = False
+        return return_return</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.load_profile"><code class="name flex">
+<span>def <span class="ident">load_profile</span></span>(<span>self, re_username, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Load the profile and split the string</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_profile(self, re_username, filename):
+    &#34;&#34;&#34;Load the profile and split the string&#34;&#34;&#34;
+    try:  # Split them apart first
+        f = open(filename, &#39;r&#39;)
+        reader = f.readline()
+        delimiter = &#34;{&#34;  # Sets up the delimiter, but append it
+        s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+        # line 247 Adapted from codegrepper.com
+        flag = 0  # Flag is for the wanted recipient
+        for i in s:
+            if eval(i)[&#39;re_username&#39;] == re_username:  # If the dictionary&#39;s username is the username we want
+                s.remove(i)  # Remove from the dictionary
+                flag = i
+
+        self.username = eval(flag)[&#39;username&#39;]  # Turn flag to a dictionary using eval() then get the username
+        self.re_username = eval(flag)[&#39;re_username&#39;]
+        self.password = eval(flag)[&#39;password&#39;]
+        self.dsuserver = eval(flag)[&#39;dsuserver&#39;]
+        for post_obj in eval(flag)[&#39;message_list&#39;]:
+            self.message_list.append(post_obj)
+        return s  # Return the removed list
+
+    except Exception as ex:
+        print(ex)
+        raise DsuProfileError(ex)</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.open_mes"><code class="name flex">
+<span>def <span class="ident">open_mes</span></span>(<span>self, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method accepts a filename and return a list of recipient</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def open_mes(self, filename):
+    &#34;&#34;&#34;This method accepts a filename and return a list of recipient&#34;&#34;&#34;
+    opener = open(filename, &#39;r&#39;)
+    reader = opener.readline()
+    delimiter = &#34;{&#34;  # Split the information
+    s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+    return_list = []
+    for i in s:
+        res = json.loads(i)
+        return_list.append(res[&#39;re_username&#39;])  # Get the recipient username into a list
+    return return_list</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.re_message_get"><code class="name flex">
+<span>def <span class="ident">re_message_get</span></span>(<span>self, re_username, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method gets a recipient's username and filename, it returns a list of all the messages</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def re_message_get(self, re_username, filename):
+    &#34;&#34;&#34;This method gets a recipient&#39;s username and filename, it returns a list of all the messages&#34;&#34;&#34;
+    opener = open(filename, &#39;r&#39;)
+    reader = opener.readline()
+    delimiter = &#34;{&#34;
+    s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+    return_list = []
+    for i in s:
+        res = json.loads(i)  # Load the data (in Json)
+        if re_username == res[&#39;re_username&#39;]:  # Get the recipient&#39;s username
+            for j in res[&#39;message_list&#39;]:
+                if j == []:
+                    return None  # Empty file
+                else:
+                    return_list.append(j)  # Append all the messages
+    return_list.remove(return_list[0])  # Remove the first item because it is always an empty &#39;&#39;
+    return return_list</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.return_user_pass"><code class="name flex">
+<span>def <span class="ident">return_user_pass</span></span>(<span>self, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method takes in a filename and return a list of user's information such as username, password, and dsuserver</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def return_user_pass(self, filename):
+    &#34;&#34;&#34;This method takes in a filename and return a list of user&#39;s information such as username, password, and dsuserver&#34;&#34;&#34;
+    opener = open(filename)
+    reader = opener.readline()
+    delimiter = &#34;{&#34;
+    s = [delimiter + e for e in reader.split(delimiter) if e]  # Split the string into sections
+    return_list = []  # Create an empty list
+    for i in s:
+        res = json.loads(i)  # Load all the information in Json
+        return_list.append(res[&#39;username&#39;])
+        return_list.append(res[&#39;password&#39;])
+        return_list.append(res[&#39;dsuserver&#39;])
+        break  # Because it does not need to run multiple times, all the above variables are the same for all.
+    return return_list</code></pre>
+</details>
+</dd>
+<dt id="Final_Profile.SaveData.save_into_dsu"><code class="name flex">
+<span>def <span class="ident">save_into_dsu</span></span>(<span>self, username, message, re_username, password, dsuserver, filename) ‑> None</span>
+</code></dt>
+<dd>
+<div class="desc"><p>This method gets all the parameter and is most likely the entry point of this SaveData()</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_into_dsu(self, username, message, re_username, password, dsuserver, filename) -&gt; None:
+    &#34;&#34;&#34;This method gets all the parameter and is most likely the entry point of this SaveData()&#34;&#34;&#34;
+    checker = self.check_for_duplicate(re_username, filename)  # Go check it the recipient was made
+    if checker is False:  # If return value is false, it means it does not exist
+        try:
+            f = open(filename, &#39;a&#39;)  # Add to the file
+            self.dsuserver = dsuserver
+            self.username = username
+            self.re_username = re_username
+            self.password = password
+            self.message_list.append(message)
+            json.dump(self.__dict__, f)  # Dump it into the file with JSON format
+            f.close()
+        except Exception as ex:
+            raise DsuFileError(&#34;An error occurred while attempting to process the DSU file.&#34;, ex)
+    else:
+        current_remove = self.load_profile(re_username, filename)  # Get the rest of the information (without the current user one)
+        f = open(filename, &#39;w&#39;)  # Delete everything inside the file
+        f.close()
+        self.add_post(message)  # Add post to the current user&#39;s list
+        f = open(filename, &#39;a&#39;)  # Overwrite the current string inside the file
+        if len(current_remove) != 0:
+            for i in current_remove:
+                x = str(i)
+                f.write(x)  # Append the original into the file
+            y = self.__dict__
+            new_insert = single_double(str(y))  # Make sure it is double quotation mark
+            f.write(new_insert)  # Insert the new message
+            f.close()
+        else:
+            x = self.__dict__
+            new_insert = single_double(str(x))  # Double quotation
+            f.write(new_insert)
+            f.close()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="Final_Profile.single_double" href="#Final_Profile.single_double">single_double</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="Final_Profile.DsuFileError" href="#Final_Profile.DsuFileError">DsuFileError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="Final_Profile.DsuProfileError" href="#Final_Profile.DsuProfileError">DsuProfileError</a></code></h4>
+</li>
+<li>
+<h4><code><a title="Final_Profile.GetData" href="#Final_Profile.GetData">GetData</a></code></h4>
+<ul class="">
+<li><code><a title="Final_Profile.GetData.get_file_name" href="#Final_Profile.GetData.get_file_name">get_file_name</a></code></li>
+<li><code><a title="Final_Profile.GetData.send_file" href="#Final_Profile.GetData.send_file">send_file</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Final_Profile.Post" href="#Final_Profile.Post">Post</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Final_Profile.Post.entry" href="#Final_Profile.Post.entry">entry</a></code></li>
+<li><code><a title="Final_Profile.Post.get_entry" href="#Final_Profile.Post.get_entry">get_entry</a></code></li>
+<li><code><a title="Final_Profile.Post.get_time" href="#Final_Profile.Post.get_time">get_time</a></code></li>
+<li><code><a title="Final_Profile.Post.set_entry" href="#Final_Profile.Post.set_entry">set_entry</a></code></li>
+<li><code><a title="Final_Profile.Post.set_time" href="#Final_Profile.Post.set_time">set_time</a></code></li>
+<li><code><a title="Final_Profile.Post.timestamp" href="#Final_Profile.Post.timestamp">timestamp</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Final_Profile.Profile" href="#Final_Profile.Profile">Profile</a></code></h4>
+<ul class="">
+<li><code><a title="Final_Profile.Profile.add_post" href="#Final_Profile.Profile.add_post">add_post</a></code></li>
+<li><code><a title="Final_Profile.Profile.del_post" href="#Final_Profile.Profile.del_post">del_post</a></code></li>
+<li><code><a title="Final_Profile.Profile.get_posts" href="#Final_Profile.Profile.get_posts">get_posts</a></code></li>
+<li><code><a title="Final_Profile.Profile.load_profile" href="#Final_Profile.Profile.load_profile">load_profile</a></code></li>
+<li><code><a title="Final_Profile.Profile.save_profile" href="#Final_Profile.Profile.save_profile">save_profile</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="Final_Profile.SaveData" href="#Final_Profile.SaveData">SaveData</a></code></h4>
+<ul class="two-column">
+<li><code><a title="Final_Profile.SaveData.add_post" href="#Final_Profile.SaveData.add_post">add_post</a></code></li>
+<li><code><a title="Final_Profile.SaveData.check_for_duplicate" href="#Final_Profile.SaveData.check_for_duplicate">check_for_duplicate</a></code></li>
+<li><code><a title="Final_Profile.SaveData.load_profile" href="#Final_Profile.SaveData.load_profile">load_profile</a></code></li>
+<li><code><a title="Final_Profile.SaveData.open_mes" href="#Final_Profile.SaveData.open_mes">open_mes</a></code></li>
+<li><code><a title="Final_Profile.SaveData.re_message_get" href="#Final_Profile.SaveData.re_message_get">re_message_get</a></code></li>
+<li><code><a title="Final_Profile.SaveData.return_user_pass" href="#Final_Profile.SaveData.return_user_pass">return_user_pass</a></code></li>
+<li><code><a title="Final_Profile.SaveData.save_into_dsu" href="#Final_Profile.SaveData.save_into_dsu">save_into_dsu</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
